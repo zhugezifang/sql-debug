@@ -29,3 +29,7 @@ table03 sql3
 (5)执行拆分后的sql--判断执行完成
 
 (6)打印map
+
+table01 sql
+
+table02 sql
