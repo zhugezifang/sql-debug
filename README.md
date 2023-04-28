@@ -14,7 +14,7 @@
 
 (1)打开note
 
-(2)判断是sql 类型的展示debug 按钮
+(2)判断note是sql 类型的展示debug 按钮
 
 (3)输入sql
 
