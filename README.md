@@ -36,5 +36,3 @@ table01 sql
 table02 sql
 
 (7)保留7天，然后删除？
-
-()
