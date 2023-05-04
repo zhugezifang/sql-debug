@@ -14,11 +14,13 @@
 
 (1)打开note
 
-(2)判断note是sql 类型的展示 debug 按钮
+(2)判断note 绑定的是sql 类型的intercepter即 展示 debug 按钮，否则不展示
 
 (3)输入sql
 
-(4)拆分sql
+(4)点击debug 按钮
+
+(5)拆分sql
 
 table01 sql1
 
@@ -26,13 +28,13 @@ table02 sql2
 
 table03 sql3
 
-(5)执行拆分后的sql --判断执行完成
+(6)执行拆分后的sql --判断执行完成
 建表成功，输出第一个表和对应的sql
 
-(6)打印map
+(7)打印map
 
 table01 sql
 
 table02 sql
 
-(7)保留7天，然后删除？
+(8)保留7天，然后删除？
