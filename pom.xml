@@ -37,4 +37,36 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-maven-plugin</artifactId>
+                <version>${antlr4.version}</version>
+                <configuration>
+                    <arguments>
+                        <!-- 命令行参数 -package ${package} 定义生成java代码的包名-->
+                        <argument>-package</argument>
+                        <argument>com.gitee.l0km.parser</argument>
+                        <!-- 输出生成的Java源码文件位置
+                               这里的输出文件夹定义一定要与上面 -package 定义的包名匹配
+                         -->
+                        <argument>-o</argument>
+                        <argument>${basedir}/com/vince/xq/antrl4</argument>
+                    </arguments>
+                    <visitor>true</visitor>
+                    <sourceDirectory>${basedir}/src/main/resources</sourceDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>antlr</id>
+                        <goals>
+                            <goal>antlr4</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

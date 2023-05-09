@@ -1,24 +1,24 @@
 package com.vince.xq.parser;
 
-import com.vince.xq.antrl4.HiveSqlBaseVisitor;
-import com.vince.xq.antrl4.HiveSqlParser;
+import com.vince.xq.antrl4.SqlBaseVisitor;
+import com.vince.xq.antrl4.SqlParser;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class HiveSplitVisitor extends HiveSqlBaseVisitor {
+public class SqlSplitVisitor extends SqlBaseVisitor {
     private List<String> list = new ArrayList<String>();
     private boolean flag = true;
 
     private String sourceSQL;
 
-    public HiveSplitVisitor(String sql) {
+    public SqlSplitVisitor(String sql) {
         this.sourceSQL = sql;
     }
 
     @Override
-    public Object visitSelect_stmt(HiveSqlParser.Select_stmtContext ctx) {
+    public Object visitSelect_stmt(SqlParser.Select_stmtContext ctx) {
 
         if (ctx.fullselect_stmt() != null) {
             int size = ctx.fullselect_stmt().fullselect_stmt_item().size();

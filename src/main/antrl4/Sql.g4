@@ -16,7 +16,7 @@
 
    @author Canwei He
 */
-grammar HiveSql;
+grammar Sql;
 @header {
  package com.vince.xq.antrl4;
  }
